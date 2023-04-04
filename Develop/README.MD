@@ -1,4 +1,4 @@
-# title
+# ReadMe Generator
 ## Table of Contents
 - [Description](#Description)
 - [Installation](#Installation)
@@ -7,14 +7,14 @@
 - [Contribution](#Contribution)
 - [Tests](#Tests)
 ## Description 
-description
+Brief Description
 ## Installation
-install
+Install
 ## Usage
-instructions
+Instructions
 ## License
-license
+Licenses
 ## Contribution
-Me, Myself, and I
+Me
 ## Tests
 None
