@@ -2,17 +2,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// MD includes
-// Title of Project
-// Description
-// Table of Contents
-// Installation
-// usage
-// license
-// Contributions
-// Tests
-// Questions
-
 // TODO: Create an array of questions for user input
 const questions =
     inquirer
@@ -52,12 +41,37 @@ const questions =
                 message: 'List the type of tests your software contains',
                 name: 'tests',
             },
-        ]);
+        ])
+        .then((response) => {
+            const md = `# ${response.title}
+## Table of Contents
+- [Description](#Description)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [License](#License)
+- [Contribution](#Contribution)
+- [Tests](#Tests)
+## Description 
+${response.description}
+## Installation
+${response.install}
+## Usage
+${response.usage}
+## License
+${response.license}
+## Contribution
+${response.contribution}
+## Tests
+${response.tests}`;
+            const filename = `README.MD`;
+            fs.writeFile(filename, md, (err) =>
+                err ? console.error(err) : console.log('File successfully created!'));
+        });
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
 
-        
+
 }
 
 // TODO: Create a function to initialize app
@@ -65,4 +79,5 @@ function init() { }
 
 // Function call to initialize app
 init();
+
 
