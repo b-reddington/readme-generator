@@ -8,7 +8,7 @@ This password generator was developed using JavaScript, HTML, and CSS. You may g
 * Run ```npm i```
 
 ## Usage
-![A preview of the about me section](./develop/images/preview.gif)
+![A preview of the application](./Develop/images/preview.gif)
 
 ## Features
 Will generate a professional read me after answering a series of questions
